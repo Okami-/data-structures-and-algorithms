@@ -27,7 +27,8 @@ function length() {
 function clear() {
     this.top = 0;
 }
-
+// proof of concept
+/*
 var s = new Stack();
 s.push("Richard");
 s.push("John");
@@ -44,3 +45,5 @@ console.log("length: " + s.length());
 console.log(s.peek());
 s.push("Nothing");
 console.log(s.peek());
+*/
+module.exports = Stack;
