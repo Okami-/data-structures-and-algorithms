@@ -4,7 +4,7 @@ function Queue() {
     this.dequeue = dequeue;
     this.front = front;
     this.back = back;
-    this.toString = toString;
+    this.changeString = changeString;
     this.empty = empty;
     this.count = count;
 }
@@ -25,10 +25,10 @@ function back() {
     return this.dataStore[this.dataStore.length-1];
 }
 
-function toString() {
+function changeString() {
     var retStr = "";
     for (var i = 0; i < this.dataStore.length; ++i) {
-        retStr += this.dataStore[i] = "\n";
+        retStr += this.dataStore[i] + "\n";
     }
     return retStr;
 }
